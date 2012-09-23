@@ -27,6 +27,12 @@ describe('ProgressBars.Bar', function() {
     it('renders a progress bar', function() {
       expect( $fixture.find('.progress .bar').length ).toBe(1);
     });
+
+    it("binds the bar's width to percent", function() {
+      bar.set('percent', 52);
+      var style = bar.$('.bar').attr('style');
+      expect( style ).toMatch( /\bwidth:\s*52%;/ );
+    });
   });
 
 });
