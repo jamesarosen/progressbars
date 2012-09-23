@@ -9,7 +9,9 @@ describe('ProgressBars.Bar', function() {
 
     beforeEach(function() {
       $fixture = $('<div />').appendTo('body');
-      bar = Em.ProgressBars.Bar.create();
+      bar = Em.ProgressBars.Bar.create({
+        classNames: [ 'foo', 'baz' ]
+      });
 
       Em.run(function() {
         bar.appendTo( $fixture );
@@ -32,6 +34,10 @@ describe('ProgressBars.Bar', function() {
       bar.set('percent', 52);
       var style = bar.$('.bar').attr('style');
       expect( style ).toMatch( /\bwidth:\s*52%;/ );
+    });
+
+    it('accepts extra classes for the container', function() {
+      expect( bar.$().is('.progress.foo.baz') ).toBe(true);
     });
   });
 
