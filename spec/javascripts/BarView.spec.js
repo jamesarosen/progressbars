@@ -10,6 +10,7 @@ describe('ProgressBars.Bar', function() {
     beforeEach(function() {
       $fixture = $('<div />').appendTo('body');
       bar = Em.ProgressBars.Bar.create({
+        percent: 14,
         classNames: [ 'progress-striped', 'active' ]
       });
 
@@ -28,6 +29,11 @@ describe('ProgressBars.Bar', function() {
 
     it('renders a progress bar', function() {
       expect( $fixture.find('.progress .bar').length ).toBe(1);
+    });
+
+    it("sets the bar's width on render", function() {
+      var style = bar.$('.bar').attr('style');
+      expect( style ).toMatch( /\bwidth:\s*14%;/ );
     });
 
     it("binds the bar's width to percent", function() {
