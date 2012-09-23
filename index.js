@@ -1,4 +1,4 @@
-//  Ember-Progressbars.js version 0.10.0
+//  Ember-Progressbars.js version 0.10.1
 //  (c) 2012 James A. Rosen, Zendesk Inc.
 //  Timecop.js is freely distributable under the Apache v2 License
 //  For all details, documentation, and bug reports, see
@@ -10,8 +10,12 @@ Ember.ProgressBars.Bar = Ember.View.extend({
   classNames: 'progress',
 
   template: function(context) {
-    var statusClass = context.get('statusClass');
-    return "<div class='bar" + (statusClass ? " " + statusClass : '') + "'></div>";
+    var statusClass = context.get('statusClass'),
+        percent     = context.get('percent'),
+        widthStyle  = "style='width: %@%;'".fmt(percent);
+    return "<div class='bar" +
+                   (statusClass ? " " + statusClass : '') +
+                 "' " + widthStyle + "></div>";
   },
 
   percent: 0,
