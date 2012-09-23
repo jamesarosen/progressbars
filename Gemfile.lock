@@ -59,4 +59,5 @@ DEPENDENCIES
   execjs (~> 1.4)
   jasmine (~> 1.2.1)
   jasmine-headless-webkit
+  multi_json (~> 1.3)
   rake (~> 0.9)

@@ -1,0 +1,17 @@
+src_files:
+  - "components/ember/lib/jquery-1.7.2.js"
+  - "components/ember/lib/ember.js"
+  - "lib/BarView.js"
+
+stylesheets:
+  - stylesheets/*.css
+
+helpers:
+  - helpers/*.js
+
+spec_files:
+  - "**/*[sS]pec.js"
+
+src_dir:
+
+spec_dir:
