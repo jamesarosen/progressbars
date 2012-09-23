@@ -10,7 +10,7 @@ describe('ProgressBars.Bar', function() {
     beforeEach(function() {
       $fixture = $('<div />').appendTo('body');
       bar = Em.ProgressBars.Bar.create({
-        classNames: [ 'foo', 'baz' ]
+        classNames: [ 'progress-striped', 'active' ]
       });
 
       Em.run(function() {
@@ -37,7 +37,7 @@ describe('ProgressBars.Bar', function() {
     });
 
     it('accepts extra classes for the container', function() {
-      expect( bar.$().is('.progress.foo.baz') ).toBe(true);
+      expect( bar.$().is('.progress.progress-striped.active') ).toBe(true);
     });
   });
 
