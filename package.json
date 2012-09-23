@@ -1,0 +1,13 @@
+{
+  "name": "ember-progressbars",
+  "version": "0.0.0",
+  "description": "This component provides Progressbar views for [Ember.js](http://emberjs.com/) that are compatible with [http://twitter.github.com/bootstrap/](Twitter-Bootstrap).",
+  "main": "index.js",
+  "scripts": {
+    "test": "bundle exec rake test"
+  },
+  "dependencies": {
+    "jshint": "0.9.0"
+  },
+  "license": "APLv2"
+}
