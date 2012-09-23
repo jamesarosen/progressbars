@@ -39,6 +39,11 @@ describe('ProgressBars.Bar', function() {
     it('accepts extra classes for the container', function() {
       expect( bar.$().is('.progress.progress-striped.active') ).toBe(true);
     });
+
+    it("accepts a status that is used as a class on the bar", function() {
+      Em.run(function() { bar.set('status', 'warning'); });
+      expect( bar.$('.bar').is('.bar-warning') ).toBe(true);
+    });
   });
 
 });
