@@ -1,0 +1,23 @@
+{
+  "name": "ember-progressbars",
+  "version": "0.0.0",
+  "description": "ProgressBar views for Ember.js",
+  "main": [ "index.js" ],
+  "dependencies": {
+    "ember": "0.9.8.1"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jamesarosen/ember-progressbars.git"
+  },
+  "keywords": [
+    "emberjs",
+    "bootstrap",
+    "progressbars"
+  ],
+  "author": "James A. Rosen",
+  "license": "APLv2"
+}
