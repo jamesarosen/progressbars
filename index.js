@@ -1,4 +1,4 @@
-//  Ember-Progressbars.js version 0.0.0
+//  Ember-Progressbars.js version 0.9.0
 //  (c) 2012 James A. Rosen, Zendesk Inc.
 //  Timecop.js is freely distributable under the Apache v2 License
 //  For all details, documentation, and bug reports, see
