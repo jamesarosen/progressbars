@@ -13,7 +13,8 @@ With [http://twitter.github.com/bower/](Bower):
 
 ### Usage
 
-The simplest thing that will work:
+For examples, see [this Fiddle](http://jsfiddle.net/YQMWD/1/). The simplest
+thing that will work:
 
 ```handlebars
 <h3>Progress:</h3>
