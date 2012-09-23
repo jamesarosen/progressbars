@@ -16,3 +16,4 @@ end
 Dir.glob( PROJECT_ROOT.join('lib/**/*.rake') ).each { |task| load task }
 
 task :spec => :jshint
+task :build => :jshint # eventually :spec, once it's reliable
