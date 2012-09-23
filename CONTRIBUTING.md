@@ -9,4 +9,6 @@
 
 ## Running the Tests
 
- 1. open `spec/javascripts/index.html`
+Headlessly: `bundle exec rake spec`
+
+In a browser: open `spec/javascripts/index.html`
