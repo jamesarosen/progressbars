@@ -1,5 +1,20 @@
 describe('ProgressBar', function() {
 
+  describe('noConflict', function() {
+    beforeEach(function() { this.actual = window.ProgressBar; });
+    afterEach(function()  { window.ProgressBar = this.actual; });
+
+    it('replaces the original ProgressBar', function() {
+      ProgressBar.noConflict();
+      expect( window.ProgressBar.isOtherProgressBar ).toBe(true);
+    });
+
+    it('returns this version', function() {
+      var ours = ProgressBar;
+      expect( ours.noConflict() ).toBe( ours );
+    });
+  });
+
   describe('a new ProgressBar', function() {
     var $fixture, bar;
 
