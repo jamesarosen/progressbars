@@ -1,17 +1,43 @@
 ## Ember-ProgressBars
 
-This component provides progress bar views for [Ember.js](http://emberjs.com/)
-that are compatible with
-[http://twitter.github.com/bootstrap/](Twitter-Bootstrap).
+This component generates progress bars that are compatible with
+[http://twitter.github.com/bootstrap/](Twitter-Bootstrap). It also includes
+an optional [Ember.js](http://emberjs.com/) view class.
 
 ### Installation
 
 With [http://twitter.github.com/bower/](Bower):
 
-1. add "ember-progressbars" to your project's `component.json`
+1. add "progressbars" to your project's `component.json`
 1. run `bower install`
 
 ### Usage
+
+#### Standalone
+
+```javascript
+// Create a ProgressBar:
+var progressBar = new ProgressBar();
+
+// Add it to the DOM:
+progressBar.el.appendTo( 'body' );
+
+// Move the bar to 50%:
+progressBar.update( 50 );
+
+// We've encountered an error:
+progressBar.status( 'error' );
+```
+
+This will result in
+
+```html
+<div class="progress">
+  <div class="bar bar-error" style="width: 50%;"></div>
+</div>
+```
+
+#### With Ember
 
 For examples, see [this Fiddle](http://jsfiddle.net/YQMWD/1/). The simplest
 thing that will work:
