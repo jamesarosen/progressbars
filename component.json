@@ -1,7 +1,7 @@
 {
-  "name": "ember-progressbars",
+  "name": "progressbars",
   "version": "0.10.1",
-  "description": "ProgressBar views for Ember.js",
+  "description": "ProgressBar Component",
   "main": [ "index.js" ],
   "dependencies": {
     "jquery": "~1.7"
