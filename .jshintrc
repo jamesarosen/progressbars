@@ -1,6 +1,6 @@
 {
   "predef":    [
-    "module", "Em", "Ember",
+    "module", "$", "Em", "Ember",
     "expect", "it", "describe", "xit", "xdescribe", "beforeEach", "afterEach",
     "jasmine", "spyOn", "runs", "waitsFor"
   ],

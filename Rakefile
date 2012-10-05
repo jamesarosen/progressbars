@@ -9,7 +9,7 @@ VERSION = MultiJson.decode(
     File.read( PROJECT_ROOT.join('component.json') )
   )['version']
 
-LIB_FILES = [ 'BarView' ].map do |f|
+LIB_FILES = [ 'ProgressBar', 'BarView' ].map do |f|
   PROJECT_ROOT.join "lib/#{f}.js"
 end
 
