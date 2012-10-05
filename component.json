@@ -4,6 +4,9 @@
   "description": "ProgressBar views for Ember.js",
   "main": [ "index.js" ],
   "dependencies": {
+    "jquery": "~1.7"
+  },
+  "optionalDependencies": {
     "ember": "0.9.8.1"
   },
   "scripts": {
