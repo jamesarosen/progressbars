@@ -10,8 +10,9 @@ task :build do
     )['version']
 
   contents = LIB_FILES.inject( StringIO.new ) do |sum, lib_file|
+    sum << "(function() {"
     sum << File.read(lib_file)
-    sum << "\n"
+    sum << "}());\n"
     sum
   end.string
 
