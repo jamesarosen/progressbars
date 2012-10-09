@@ -6,7 +6,7 @@ an optional [Ember.js](http://emberjs.com/) view class.
 
 ### Installation
 
-With [http://twitter.github.com/bower/](Bower):
+With [Bower](http://twitter.github.com/bower/):
 
 1. add "progressbars" to your project's `component.json`
 1. run `bower install`
