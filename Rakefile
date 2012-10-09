@@ -1,5 +1,6 @@
 require 'pathname'
 require 'multi_json'
+require 'rake/clean'
 
 # Build information:
 
@@ -14,6 +15,8 @@ LIB_FILES = [ 'ProgressBar', 'BarView' ].map do |f|
 end
 
 Dir.glob( PROJECT_ROOT.join('lib/**/*.rake') ).each { |task| load task }
+
+CLOBBER.include PROJECT_ROOT.join('{components,node_modules}').to_s
 
 task :jshint => :getting_started
 task :build  => :jshint
