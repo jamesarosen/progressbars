@@ -17,8 +17,10 @@
     "url": "git@github.com:jamesarosen/ember-progressbars.git"
   },
   "keywords": [
+    "ember",
     "emberjs",
     "bootstrap",
+    "progress",
     "progressbars"
   ],
   "author": "James A. Rosen",
