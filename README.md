@@ -1,12 +1,12 @@
 ## Ember-ProgressBars
 
 This component generates progress bars that are compatible with
-[http://twitter.github.com/bootstrap/](Twitter-Bootstrap). It also includes
+[Twitter-Bootstrap](http://twitter.github.com/bootstrap/). It also includes
 an optional [Ember.js](http://emberjs.com/) view class.
 
 ### Installation
 
-With [http://twitter.github.com/bower/](Bower):
+With [Bower](http://twitter.github.com/bower/):
 
 1. add "progressbars" to your project's `component.json`
 1. run `bower install`
